@@ -27,7 +27,7 @@ extension UIView {
         }
         
         if let right = right {
-            rightAnchor.constraint(equalTo: right, constant: -paddingBottom).isActive = true
+            rightAnchor.constraint(equalTo: right, constant: -paddingRight).isActive = true
         }
         
         if let width = width {
@@ -41,5 +41,9 @@ extension UIView {
     
     func centerX(inView view: UIView) {
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    func centerY(inView view: UIView) {
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
